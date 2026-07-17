@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS loans (
     member_id INT,
     date_borrowed DATE NOT NULL,
     due_date DATE NOT NULL,
-    return_date DATE DEFAULT NULL,s
+    return_date DATE DEFAULT NULL,
     guardian_name VARCHAR(255) DEFAULT NULL,
     guardian_contact VARCHAR(100) DEFAULT NULL,
     FOREIGN KEY (device_id) REFERENCES devices(device_id),
